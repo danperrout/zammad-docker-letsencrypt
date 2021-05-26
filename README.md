@@ -21,13 +21,13 @@ cd zammad-docker-letsencrypt
 4. Copy the `default` file to the nginx/sites-available folder
 
 ```
-cp default /etc/nginx/sites-available/default
+sudo cp default /etc/nginx/sites-available/default
 ```
 
 5. Create a symbolic link on the the docker volume so that the nginx can access it
 
 ```
-ln -s /var/lib/docker/volumes/zammad-docker-letsencrypt_zammad-data/_data/ /opt/zammad
+sudo ln -s /var/lib/docker/volumes/zammad-docker-letsencrypt_zammad-data/_data/ /opt/zammad
 ```
 
 6. Rename `sample.env` to `.env` and change the 'POSTGRES_PASS' value
