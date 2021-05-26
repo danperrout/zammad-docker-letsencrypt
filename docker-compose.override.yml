@@ -1,0 +1,8 @@
+version: "2"
+services:
+  zammad-railsserver:
+    ports:
+      - "3000:3000"
+  zammad-websocket:
+    ports:
+      - "6042:6042"
