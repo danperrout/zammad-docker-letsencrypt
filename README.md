@@ -2,6 +2,8 @@
 
 Install your Zammad instance in any Linux server with 'https' protocol certificate provided by Let's Encrypt.
 
+⚠️ This is an alternative and not the official way. Find more information [here](https://docs.zammad.org/en/latest/install/docker-compose.html).
+
 # Installation
 
 1. [Follow these instructions to install the SSL Let's Encrypt Certificate](https://haydenjames.io/how-to-set-up-an-nginx-certbot/)
