@@ -3,7 +3,7 @@
 Install your Zammad instance in any Linux server with 'https' protocol certificate provided by Let's Encrypt.
 
 ## Please be aware
-✋ This repo uses **nginx on the host machine**, not on the container. [Here's the reason why](https://nickjanetakis.com/blog/why-i-prefer-running-nginx-on-my-docker-host-instead-of-in-a-container).
+✋ This repo uses **nginx on the host machine**, not on the container. [Here's the reason why](https://nickjanetakis.com/blog/why-i-prefer-running-nginx-on-my-docker-host-instead-of-in-a-container).  
 ⚠️ This is an alternative and not the official way. Find more information [here](https://docs.zammad.org/en/latest/install/docker-compose.html).
 
 # Installation
