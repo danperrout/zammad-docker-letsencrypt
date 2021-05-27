@@ -2,6 +2,8 @@
 
 Install your Zammad instance in any Linux server with 'https' protocol certificate provided by Let's Encrypt.
 
+## Please be aware
+✋ This repo uses **nginx on the host machine**, not on the container. [Here's the reason why](https://nickjanetakis.com/blog/why-i-prefer-running-nginx-on-my-docker-host-instead-of-in-a-container).
 ⚠️ This is an alternative and not the official way. Find more information [here](https://docs.zammad.org/en/latest/install/docker-compose.html).
 
 # Installation
@@ -26,7 +28,7 @@ cd zammad-docker-letsencrypt
 sudo cp default /etc/nginx/sites-available/default
 ```
 
-5. Create a symbolic link on the the docker volume so that the nginx can access it
+5. Create a symbolic link on the the docker volume so that the nginx on the host can access it
 
 ```
 sudo ln -s /var/lib/docker/volumes/zammad-docker-letsencrypt_zammad-data/_data/ /opt/zammad
